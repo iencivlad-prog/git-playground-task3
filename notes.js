@@ -27,6 +27,10 @@ function main() {
       }
       break;
     }
+    case "count": {
+      console.log(store.all().length);
+      break;
+    }
     case "search": {
       const term = rest.join(" ").trim();
       const found = store.search(term);
