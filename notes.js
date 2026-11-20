@@ -28,7 +28,8 @@ function main() {
       break;
     }
     case "count": {
-      console.log(store.all().length);
+      const n = store.all().length;
+      console.log(`You have ${n} ${n === 1 ? "note" : "notes"}.`);
       break;
     }
     case "search": {
